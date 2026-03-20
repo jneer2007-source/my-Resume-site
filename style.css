@@ -1,27 +1,53 @@
+/* General Background */
 body {
-    background-color: #eef2f3; /* Light blue-grey background */
-    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 50px;
 }
 
-#main-header {
-    background-color: #2c3e50; /* Dark professional blue */
-    color: white;
-    text-align: center;
-    padding: 40px;
-    border-radius: 10px;
-}
-
-.card {
+/* The Main Box */
+.resume-wrapper {
+    max-width: 900px;
+    margin: auto;
     background: white;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Makes it look 3D */
+    display: flex; /* Creates the two columns */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
 
-h2 {
-    color: #2c3e50;
-    border-bottom: 2px solid #2c3e50;
+/* Sidebar (Left) */
+.sidebar {
+    flex: 1;
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px;
+}
+
+.profile-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Main Content (Right) */
+.main-content {
+    flex: 2;
+    padding: 40px;
+}
+
+h1 { color: #2c3e50; margin-bottom: 5px; }
+.tagline { color: #3498db; font-weight: bold; margin-bottom: 30px; }
+
+/* Section Hover Effect */
+.exp-item {
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.exp-item:hover {
+    background-color: #f8f9fa;
+    transform: translateX(10px); /* Moves it slightly when you hover */
 }
